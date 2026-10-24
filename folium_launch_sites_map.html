@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_03e594b7d3f830d49e829987c049baae {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+
+            <style>html, body {
+                width: 100%;
+                height: 100%;
+                margin: 0;
+                padding: 0;
+            }
+            </style>
+
+            <style>#map {
+                position:absolute;
+                top:0;
+                bottom:0;
+                right:0;
+                left:0;
+                }
+            </style>
+
+            <script>
+                L_NO_TOUCH = false;
+                L_DISABLE_3D = false;
+            </script>
+
+        
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_03e594b7d3f830d49e829987c049baae" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_03e594b7d3f830d49e829987c049baae = L.map(
+                "map_03e594b7d3f830d49e829987c049baae",
+                {
+                    center: [31.0, -99.0],
+                    crs: L.CRS.EPSG3857,
+                    ...{
+  "zoom": 4,
+  "zoomControl": true,
+  "preferCanvas": false,
+}
+
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_207f32269dceaac98908ed69202681b1 = L.tileLayer(
+                "https://tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {
+  "minZoom": 0,
+  "maxZoom": 19,
+  "maxNativeZoom": 19,
+  "noWrap": false,
+  "attribution": "\u0026copy; \u003ca href=\"https://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors",
+  "subdomains": "abc",
+  "detectRetina": false,
+  "tms": false,
+  "opacity": 1,
+}
+
+            );
+        
+    
+            tile_layer_207f32269dceaac98908ed69202681b1.addTo(map_03e594b7d3f830d49e829987c049baae);
+        
+    
+            var marker_30dab7ed30071cf733e2a51155ef3ad4 = L.marker(
+                [28.562302, -80.577356],
+                {
+}
+            ).addTo(map_03e594b7d3f830d49e829987c049baae);
+        
+    
+        var popup_7a148fdb3a79d70a776756373479eb13 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_799f47775028bd3288765736800b0a27 = $(`<div id="html_799f47775028bd3288765736800b0a27" style="width: 100.0%; height: 100.0%;">CCAFS LC-40<br>Launch-site coordinate from course notebook</div>`)[0];
+                popup_7a148fdb3a79d70a776756373479eb13.setContent(html_799f47775028bd3288765736800b0a27);
+            
+        
+
+        marker_30dab7ed30071cf733e2a51155ef3ad4.bindPopup(popup_7a148fdb3a79d70a776756373479eb13)
+        ;
+
+        
+    
+    
+            marker_30dab7ed30071cf733e2a51155ef3ad4.bindTooltip(
+                `<div>
+                     CCAFS LC-40
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_54aa9cf2d938c8b09ea746bd46cf510a = L.marker(
+                [28.563197, -80.57682],
+                {
+}
+            ).addTo(map_03e594b7d3f830d49e829987c049baae);
+        
+    
+        var popup_d15ce439c5b5ffb69058885c4994d3a6 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_30912b8ed9189e422496923defe9a839 = $(`<div id="html_30912b8ed9189e422496923defe9a839" style="width: 100.0%; height: 100.0%;">CCAFS SLC-40<br>Launch-site coordinate from course notebook</div>`)[0];
+                popup_d15ce439c5b5ffb69058885c4994d3a6.setContent(html_30912b8ed9189e422496923defe9a839);
+            
+        
+
+        marker_54aa9cf2d938c8b09ea746bd46cf510a.bindPopup(popup_d15ce439c5b5ffb69058885c4994d3a6)
+        ;
+
+        
+    
+    
+            marker_54aa9cf2d938c8b09ea746bd46cf510a.bindTooltip(
+                `<div>
+                     CCAFS SLC-40
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_5b365eb1f5287ba78a50001ee44eaec9 = L.marker(
+                [28.573255, -80.646895],
+                {
+}
+            ).addTo(map_03e594b7d3f830d49e829987c049baae);
+        
+    
+        var popup_efac148e449d661b64d2c8fea6841b6f = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_2b2fa06c30da01cebe2dbf24b86eee64 = $(`<div id="html_2b2fa06c30da01cebe2dbf24b86eee64" style="width: 100.0%; height: 100.0%;">KSC LC-39A<br>Launch-site coordinate from course notebook</div>`)[0];
+                popup_efac148e449d661b64d2c8fea6841b6f.setContent(html_2b2fa06c30da01cebe2dbf24b86eee64);
+            
+        
+
+        marker_5b365eb1f5287ba78a50001ee44eaec9.bindPopup(popup_efac148e449d661b64d2c8fea6841b6f)
+        ;
+
+        
+    
+    
+            marker_5b365eb1f5287ba78a50001ee44eaec9.bindTooltip(
+                `<div>
+                     KSC LC-39A
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_e779110fd4eee03ff468936c6b0f47a8 = L.marker(
+                [34.632834, -120.610746],
+                {
+}
+            ).addTo(map_03e594b7d3f830d49e829987c049baae);
+        
+    
+        var popup_6fe5aa895083766222e5a575211f8047 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_9feef97caa27b374bf0f6702a9cdeb61 = $(`<div id="html_9feef97caa27b374bf0f6702a9cdeb61" style="width: 100.0%; height: 100.0%;">VAFB SLC-4E<br>Launch-site coordinate from course notebook</div>`)[0];
+                popup_6fe5aa895083766222e5a575211f8047.setContent(html_9feef97caa27b374bf0f6702a9cdeb61);
+            
+        
+
+        marker_e779110fd4eee03ff468936c6b0f47a8.bindPopup(popup_6fe5aa895083766222e5a575211f8047)
+        ;
+
+        
+    
+    
+            marker_e779110fd4eee03ff468936c6b0f47a8.bindTooltip(
+                `<div>
+                     VAFB SLC-4E
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+</script>
+</html>
